@@ -1,28 +1,19 @@
-import React from 'react';
-import { Header } from './components/Header';
-import { Balance } from './components/Balance';
-import { IncomeExpenses } from './components/IncomeExpenses';
-import { TransactionList } from './components/TransactionList';
-import { AddTransaction } from './components/AddTransaction';
-import { GlobalProvider } from './context/GlobalState';
+import React, { useState } from "react"; 
 
-import './App.css';
-
+import {Message} from './Message.js'
+import "./App.css";
 
 function App() {
-  return (
-    <GlobalProvider>
-      <Header />
-      <div className="container">
-        <Balance/>
-        <IncomeExpenses/>
-        <TransactionList/>
-        <AddTransaction/>
-        
-      </div>
+  let [count, setCount] = useState(0)
 
-    </GlobalProvider>
-  );
-}
+    //setCount(2)
+  
+  return (
+    <div className="box">
+      <Message counter={count}/>
+      <h3>Hello the value of count is : {count}</h3>
+      <button className="daylight" onClick={()=> setCount(++count)}>Update AB</button>
+    </div>
+  )}
 
 export default App;
