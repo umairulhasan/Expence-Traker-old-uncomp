@@ -1,5 +1,5 @@
 import React, { useState } from "react"; 
-
+import Context from './Context';
 import {Message} from './Message.js'
 import "./App.css";
 
@@ -9,11 +9,14 @@ function App() {
     //setCount(2)
   
   return (
-    <div className="box">
+    <Context.Provider value={40}>
+    <div >
       <Message counter={count}/>
-      <h3>Hello the value of count is : {count}</h3>
-      <button className="daylight" onClick={()=> setCount(++count)}>Update AB</button>
+      <h3>Hello the value of count is from app: {count}</h3>
+      <button  onClick={()=> setCount(++count)}>UP</button>
     </div>
+    </Context.Provider>
+    
   )}
 
 export default App;
