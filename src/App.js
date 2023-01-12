@@ -9,7 +9,7 @@ function App() {
     //setCount(2)
   
   return (
-    <Context.Provider value={40}>
+    <Context.Provider value={40}  >
     <div >
       <Message counter={count}/>
       <h3>Hello the value of count is from app: {count}</h3>
