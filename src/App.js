@@ -40,15 +40,15 @@ import CounterInput from './CounterInput';
 import CounterOutput from './CounterOutput';
 
 function App() {
-  const [counter, setCounter] = useState(0);
+  
 
   return (
     //This is the parent component 
     <div className='App'>
     
-      <CounterOutput counter={counter} />
+      <CounterOutput />
       <br />
-      <CounterInput setCounter={setCounter} counter={counter} />
+      <CounterInput />
     </div>
   );
 }
