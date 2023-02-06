@@ -1,5 +1,5 @@
-import React, {createContext} from 'react';
+// import React, {createContext} from 'react';
 
-const Helping = createContext(50);
+// const Helping = createContext(50);
 
-export default Helping;
+// export default Helping;
