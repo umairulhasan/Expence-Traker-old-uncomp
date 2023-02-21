@@ -38,7 +38,7 @@
 import React, { useState } from 'react';
 import CounterInput from './CounterInput';
 import CounterOutput from './CounterOutput';
-
+import Filterpractive from './Filterpractive';
 function App() {
   
 
@@ -49,6 +49,8 @@ function App() {
       <CounterOutput />
       <br />
       <CounterInput />
+      <br/>
+      <Filterpractive/>
     </div>
   );
 }
