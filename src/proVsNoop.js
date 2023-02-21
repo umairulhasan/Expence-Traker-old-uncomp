@@ -24,6 +24,25 @@
 
 
 
+// Sir Amir Example 
+
+// const obj1 = {
+
+//     name : "Umair "
+// }
+
+// you are assigining obj2 to obj 1 
+
+// const obj2 = obj1
+
+// obj2.name = "Ul Hassan"
+
+
+
+
+
+
+
 
 // populating of array 
 
