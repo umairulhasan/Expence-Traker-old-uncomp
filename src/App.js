@@ -39,13 +39,14 @@ import React, { useState } from 'react';
 import CounterInput from './CounterInput';
 import CounterOutput from './CounterOutput';
 import Filterpractive from './Filterpractive';
+import Prop from './propsPractice';
 function App() {
   
 
   return (
     //This is the parent component 
     <div className='App'>
-    
+    <Prop    dishName = 'This is the parent data'/>
       <CounterOutput />
       <br />
       <CounterInput />
