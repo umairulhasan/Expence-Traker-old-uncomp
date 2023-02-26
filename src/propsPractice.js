@@ -10,7 +10,7 @@ export default function propsPractice(props) {
 
     // }
     <div>
-      <h1>Hello {props.displayName}</h1>
+      <h1>Hello {props.dishName}</h1>
     </div>
   );
 }

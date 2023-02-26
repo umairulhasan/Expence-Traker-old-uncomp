@@ -46,7 +46,11 @@ function App() {
   return (
     //This is the parent component 
     <div className='App'>
-    <Prop    dishName = 'This is the parent data'/>
+    <Prop dishName = 'This is the parent data'/>
+    <br/>
+    <Prop dishName = 'Now we use same component but send different data'/>
+    <br/>
+    <Prop dishName = 'Same in this case'/>
       <CounterOutput />
       <br />
       <CounterInput />
