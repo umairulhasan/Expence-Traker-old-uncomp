@@ -40,22 +40,20 @@ import CounterInput from './CounterInput';
 import CounterOutput from './CounterOutput';
 import Filterpractive from './Filterpractive';
 import Prop from './propsPractice';
+import useStateHookPractive from './useStateHookPractive';
+import ThisComponentRecivedValueAsPropThroughUseState from './ThisComponentRecivedValueAsPropThroughUseState';
+
 function App() {
   
 
   return (
+    
+
+
     //This is the parent component 
-    <div className='App'>
-    <Prop dishName = 'This is the parent data'/>
-    <br/>
-    <Prop dishName = 'Now we use same component but send different data'/>
-    <br/>
-    <Prop dishName = 'Same in this case'/>
-      <CounterOutput />
-      <br />
-      <CounterInput />
-      <br/>
-      <Filterpractive/>
+    <div >
+      
+   
     </div>
   );
 }
