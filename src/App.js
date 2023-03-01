@@ -36,13 +36,14 @@
 
 // export default App;
 import React, { useState } from 'react';
+import './CustomClass.css';
 import CounterInput from './CounterInput';
 import CounterOutput from './CounterOutput';
 import Filterpractive from './Filterpractive';
 import Prop from './propsPractice';
 import useStateHookPractive from './useStateHookPractive';
 import ThisComponentRecivedValueAsPropThroughUseState from './ThisComponentRecivedValueAsPropThroughUseState';
-
+import Class4 from './Class4';
 function App() {
   
 
@@ -53,7 +54,7 @@ function App() {
     //This is the parent component 
     <div >
       
-   
+   <Class4/>
     </div>
   );
 }
