@@ -44,6 +44,7 @@ import Prop from './propsPractice';
 import UseStateHookPractive from './UseStateHookPractive';
 import ThisComponentRecivedValueAsPropThroughUseState from './ThisComponentRecivedValueAsPropThroughUseState';
 import Class4 from './Class4';
+import Parent from './Parent'
 function App() {
   
 
@@ -53,10 +54,8 @@ function App() {
 
     //This is the parent component 
     <div >
-      
-   <Class4/>
-   <ThisComponentRecivedValueAsPropThroughUseState/>
-   <UseStateHookPractive/>
+      <Parent name= {"Umair"}/>
+  
     </div>
   );
 }
