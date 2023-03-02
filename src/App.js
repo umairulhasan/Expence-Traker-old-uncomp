@@ -45,6 +45,7 @@ import UseStateHookPractive from './UseStateHookPractive';
 import ThisComponentRecivedValueAsPropThroughUseState from './ThisComponentRecivedValueAsPropThroughUseState';
 import Class4 from './Class4';
 import Parent from './Parent'
+import ForReducer from './ForReducer';
 import ContextName from './Context'
 function App() {
   
@@ -53,6 +54,7 @@ let king = useState(23333)
   return (
     //This is the parent component 
     <div >
+      <ForReducer/>
       <h1>
         This is the context value {ValueComefrom }
       </h1>
