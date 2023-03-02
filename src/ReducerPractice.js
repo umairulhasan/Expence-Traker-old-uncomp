@@ -8,3 +8,10 @@ const ReducerPractice = (state , action) => {
 }
 
 export default ReducerPractice;
+
+
+// Action {   dispatction function hit at action
+
+//     Type : 'INCREMENT',
+//     The new value to cjhange
+// }
