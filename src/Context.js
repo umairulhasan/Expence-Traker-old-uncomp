@@ -1,5 +1,5 @@
-// import React, {createContext} from 'react';
+import React, {createContext} from 'react';
 
-// const Helping = createContext(50);
+const ContextName = createContext(50);  // inside create context you can make any logic (inside this)
 
-// export default Helping;
+export default ContextName;

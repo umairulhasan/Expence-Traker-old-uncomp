@@ -35,7 +35,7 @@
 //   )}
 
 // export default App;
-import React, { useState } from 'react';
+import React, { useState , useContext } from 'react';
 import './CustomClass.css';
 import CounterInput from './CounterInput';
 import CounterOutput from './CounterOutput';
@@ -45,17 +45,20 @@ import UseStateHookPractive from './UseStateHookPractive';
 import ThisComponentRecivedValueAsPropThroughUseState from './ThisComponentRecivedValueAsPropThroughUseState';
 import Class4 from './Class4';
 import Parent from './Parent'
+import ContextName from './Context'
 function App() {
   
-
+let ValueComefrom = useContext(ContextName)
+let king = useState(23333)
   return (
-    
-
-
     //This is the parent component 
     <div >
+      <h1>
+        This is the context value {ValueComefrom }
+      </h1>
+      <ContextName.Provider value = {king}>
       <Parent name= {"Umair"}/>
-  
+      </ContextName.Provider>
     </div>
   );
 }

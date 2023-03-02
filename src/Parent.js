@@ -1,10 +1,12 @@
-import React from 'react';
+import React , {useContext} from 'react';
 import Child from './Child';
-
-export default function Parent(props) {
+import ContextName from './Context';
+export default function Parent() {
+  let ValueComefrom = useContext(ContextName)
+  console.log(ValueComefrom)
   return (
     <div>
-    <Child name= {props.name}/>
+    <h1> This is {ValueComefrom[1] }</h1>
     </div>
   );
 }
